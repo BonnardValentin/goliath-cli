@@ -10,7 +10,7 @@ const installDependencies = (path) => {
       if (code === 0) {
         resolve();
       } else {
-        reject(new Error("Failed to install dependencies"));
+        reject(`Failed to install dependencies with code ${code}`);
       }
     });
   });
